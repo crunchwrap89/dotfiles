@@ -1,0 +1,57 @@
+# Ignore everything by default.
+*
+
+!.bash*
+.*.swp
+.bash_history
+.bash_local
+.bash_logout
+!.profile
+
+# Git aliases, identification info
+!.gitignore
+!.gitexcludes
+
+!.vim
+!.vim/*
+!.vim/*/*
+!.vim/*/*/*
+!.vim/*/*/*/*
+!.vim/*/*/*/*/*
+!.vim/*/*/*/*/*/*
+.vim/.netrwhist
+.vim/plugged
+!.vimrc
+.vim/.*.swp
+.vim/*/.*.swp
+.vim/*/*/.*.swp
+.vim/*/*/*/.*.swp
+
+# Local copies of tools/scripts
+!bin
+!bin/*
+bin/.*.swp
+bin/fly
+
+# Config for local daemons 
+!etc
+!etc/*
+etc/clusto*.conf
+
+# tmux
+!.tmux.conf
+!.tmux
+!.tmux/*.yml
+
+# Hammerspoon (Lua-based OS X automation tool)
+!.hammerspoon
+!.hammerspoon/*
+.hammerspoon/.*.swp
+
+# Linux workstation stuff
+!.config
+!.config/nvim
+!.config/nvim/init.lua
+!.config/xfce4
+!.config/xfce4/terminal
+!.config/xfce4/terminal/terminalrc
