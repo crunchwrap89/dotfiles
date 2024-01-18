@@ -1,6 +1,8 @@
 # Ignore everything by default.
 *
 
+!bootstrap.sh
+
 !.bash*
 .*.swp
 .bash_history
