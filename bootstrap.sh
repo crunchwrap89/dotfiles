@@ -14,8 +14,7 @@ ln -s ~/.local/squashfs-root/AppRun ~/.local/bin/nvim
 
 # Bring in our custom neovim config
 echo "XDG_CONFIG_HOME=$HOME" >>~/.profile
-npx degit https://github.com/crunchwrap89/dotfiles ~/
-cd ~/.config/nvim
+npx degit https://github.com/crunchwrap89/dotfiles ~/ -f
 
 cd /workspaces/$RepositoryName
 # poetry run pip install pynvim ipython  # Avoid if we can help it
