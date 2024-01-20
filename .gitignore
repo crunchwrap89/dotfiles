@@ -54,6 +54,11 @@ etc/clusto*.conf
 !.config
 !.config/nvim
 !.config/nvim/init.lua
+!.config/nvim/lazyvim.json
+!.config/nvim/lua
+!.config/nvim/lua/*
+!.config/nvim/lua/*/*
+!.config/nvim/stylua.toml
 !.config/xfce4
 !.config/xfce4/terminal
 !.config/xfce4/terminal/terminalrc
