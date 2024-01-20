@@ -21,8 +21,10 @@ mv ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 cd /workspaces/$RepositoryName
 # poetry run pip install pynvim ipython  # Avoid if we can help it
-nvim --headless +":MasonInstall vue-language-server<cr>"
-nvim --headless +":UpdateRemotePlugins<cr>" +"q!"
+nvim --headless +"q!"
+nvim --headless +":LspInstall vue-language-server" + "q!"
+nvim --headless +":TSInstall vue" + "q!"
+nvim --headless +":UpdateRemotePlugins" +"q!"
 
 # Setup git completions for bash
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
