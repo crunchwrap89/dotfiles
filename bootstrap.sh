@@ -23,6 +23,8 @@ cd /workspaces/$RepositoryName
 # poetry run pip install pynvim ipython  # Avoid if we can help it
 nvim --headless +":UpdateRemotePlugins" +"q!"
 
+nvm use v20.11.0
+
 # Setup git completions for bash
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 echo "source ~/.git-completion.bash" >>~/.bashrc
