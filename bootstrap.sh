@@ -12,6 +12,7 @@ chmod u+x nvim.appimage
 mkdir ~/.local/bin
 ln -s ~/.local/squashfs-root/AppRun ~/.local/bin/nvim
 
+nvm use v20.11.0
 # Bring in our custom neovim config
 echo "XDG_CONFIG_HOME=$HOME" >>~/.profile
 mkdir ~/dotfiles
@@ -20,10 +21,9 @@ mv ~/dotfiles/.config/nvim ~/.config/nvim
 mv ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 cd /workspaces/$RepositoryName
+yarn install
 # poetry run pip install pynvim ipython  # Avoid if we can help it
 nvim --headless +":UpdateRemotePlugins" +"q!"
-
-nvm use v20.11.0
 
 # Setup git completions for bash
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
