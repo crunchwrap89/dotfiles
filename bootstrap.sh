@@ -10,9 +10,6 @@ chmod u+x nvim.appimage
 mkdir ~/.local/bin
 ln -s ~/.local/squashfs-root/AppRun ~/.local/bin/nvim
 
-echo "install ripgrep"
-apt-get install ripgrep
-
 echo "switch to current LTS node"
 nvm use v20.11.0
 
@@ -27,10 +24,6 @@ mv ~/dotfiles/.tmux.conf ~/.tmux.conf
 cd /workspaces/$RepositoryName
 echo "update plugins"
 nvim --headless +":UpdateRemotePlugins" +"q!"
-echo "add LSP for vue"
-nvim --headless +":MasonInstall vue-language-server" +"q!"
-echo "add treesitter for vue"
-nvim --headless +":TSInstall vue" +"q!"
 
 echo "get git completions"
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
