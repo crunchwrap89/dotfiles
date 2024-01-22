@@ -26,16 +26,7 @@ alias unify="mono && yarn start:web"
 alias check="mono && yarn lint && yarn typecheck"
 alias testweb="mono && yarn test:only-web"
 alias gencontent="yarn build:content-types && yarn nx test csp-web-content-definitions"
-alias gqssh="gh cs ssh"
-alias pf="gh cs ports forward 1337:3000 && gh cs ports forward 4000:4000"
-alias gdev="git checkout develop && git pull"
-alias gca="git add . && git commit -m "
-alias gch="git checkout "
-alias gchb="git checkout -b "
-alias gpl="git pull"
-alias gps="git push"
-alias gd="git diff"
-alias gs="git status"
+alias gqdev="tmuxp load gq"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
