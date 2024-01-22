@@ -40,6 +40,9 @@ bin/fly
 !etc/*
 etc/clusto*.conf
 
+# zsh
+!.zshrc
+
 # tmux
 !.tmux.conf
 !.tmux
